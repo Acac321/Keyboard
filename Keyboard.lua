@@ -71,7 +71,7 @@ TextLabel.BackgroundTransparency = 1.000
 TextLabel.Position = UDim2.new(0.129629627, 0, 0.4375, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Made By Mark.#0020 (Real)"
+TextLabel.Text = "Made By Mark.#0020 (real)"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 15.000
 
