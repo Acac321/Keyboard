@@ -85,31 +85,22 @@ local function ZDNR_fake_script() -- ScreenGui.LocalScript
 	local X = script.Parent.Frame.XWord
 	local Z = script.Parent.Frame.ZWord
 	
-	local VirtualUser = game:GetService("VirtualUser")
-	VirtualUser:CaptureController()
+	local N = game:GetService("VirtualInputManager")
 	
 	E.MouseButton1Click:Connect(function()
-		VirtualUser:SetKeyDown("0x45")
-		task.wait(0.1)
-		VirtualUser:SetKeyUp("0x45")
+		N:SendKeyEvent(true, "E", false, game)
 	end)
 	
 	H.MouseButton1Click:Connect(function()
-		VirtualUser:SetKeyDown("0x48")
-		task.wait(0.1)
-		VirtualUser:SetKeyUp("0x48")
+		N:SendKeyEvent(true, "H", false, game)
 	end)
 	
 	X.MouseButton1Click:Connect(function()
-		VirtualUser:SetKeyDown("0x58")
-		task.wait(0.1)
-		VirtualUser:SetKeyUp("0x58")
+		N:SendKeyEvent(true, "X", false, game)
 	end)
 	
 	Z.MouseButton1Click:Connect(function()
-		VirtualUser:SetKeyDown("0x5a")
-		task.wait(0.1)
-		VirtualUser:SetKeyUp("0x5a")
+		N:SendKeyEvent(true, "Z", false, game)
 	end)
 	
 	local Frame = script.Parent.Frame
